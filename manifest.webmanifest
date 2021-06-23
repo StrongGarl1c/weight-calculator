@@ -9,7 +9,7 @@
         "type": "image/png"
       }
     ],
-    "name": "Awesome fox pictures",
+    "name": "Калькулятор ціни за кілограм",
     "short_name": "Кальк",
     "start_url": "./index.html"
   }
