@@ -1,0 +1,15 @@
+{
+    "background_color": "gray",
+    "description": "Розраховує ціну товару за кілограм",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "./g.jpg",
+        "sizes": "192x192",
+        "type": "image/jpg"
+      }
+    ],
+    "name": "Awesome fox pictures",
+    "short_name": "Кальк",
+    "start_url": "./index.html"
+  }
