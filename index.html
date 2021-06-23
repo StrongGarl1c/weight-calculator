@@ -30,17 +30,23 @@
     <h1>Ціна за кілограм</h1>
     <div class="grid">
       <form name="weight">
-        <input name="price" type="number" placeholder="Ціна" required />
-        <input name="volume" type="number" placeholder="Об'єм" required />
+        <input name="price" type="number" placeholder="Ціна" required min="1" />
+        <input
+          name="volume"
+          type="number"
+          placeholder="Об'єм в грамах або міліграмах"
+          required
+          min="1"
+        />
         <button type="submit">Розрахувати</button>
       </form>
       <p id="weightResult">Ціна за кілограм/літр:</p>
     </div>
     <h2>Калькулятор відсотків</h2>
     <div class="grid">
-      <p id="precentResult20"></p>
-      <p id="precentResult30"></p>
-      <p id="precentResult50"></p>
+      <p id="precentResult20">-20% :</p>
+      <p id="precentResult30">-30% :</p>
+      <p id="precentResult50">-50% :</p>
     </div>
     <script src="index.js"></script>
   </body>
