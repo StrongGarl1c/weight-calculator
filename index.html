@@ -6,31 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ціна за кілограм</title>
     <link rel="manifest" href="manifest.webmanifest" />
-    <style>
-      h1,
-      h2 {
-        text-align: center;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: 80vw;
-        justify-content: center;
-      }
-      form {
-        display: grid;
-        grid-gap: 10px;
-      }
-      input,
-      button {
-        height: 30px;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="g.png" type="image/x-icon" />
   </head>
   <body>
     <h1>Ціна за кілограм</h1>
     <div class="grid">
       <form name="weight">
-        <input name="price" type="number" placeholder="Ціна" required min="1" />
+        <input
+          name="price"
+          type="number"
+          placeholder="Ціна"
+          required
+          min="1"
+          step="0.1"
+        />
         <input
           name="volume"
           type="number"
@@ -48,6 +38,7 @@
       <p id="precentResult30">-30% :</p>
       <p id="precentResult50">-50% :</p>
     </div>
+    <div id="version">1.0.0</div>
     <script src="index.js"></script>
   </body>
 </html>

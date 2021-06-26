@@ -21,9 +21,10 @@ function percentResult(percent, result) {
   const formData = new FormData(form);
   const price = formData.get('price');
   price > 0
-    ? (result.innerText = `-${percent}% : ${
-        price - (price / 100) * percent
-      } грн.`)
+    ? (result.innerText = `-${percent}% : ${(
+        price -
+        (price / 100) * percent
+      ).toFixed(2)} грн.`)
     : (result.innerText = `-${percent}% :`);
 }
 
@@ -33,9 +34,10 @@ form.addEventListener('submit', (e) => {
   const price = formData.get('price');
   const volume = formData.get('volume');
   price && volume > 0
-    ? (weightResult.innerText += ` ${((price / volume) * 1000).toFixed(
-        2,
-      )} грн.`)
+    ? (weightResult.innerText = `Ціна за кілограм/літр: ${(
+        (price / volume) *
+        1000
+      ).toFixed(2)} грн.`)
     : (weightResult.innerText = 'Ціна за кілограм/літр:');
 });
 

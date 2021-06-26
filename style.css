@@ -1,0 +1,25 @@
+body {
+  position: relative;
+}
+h1,
+h2 {
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-template-columns: 80vw;
+  justify-content: center;
+}
+form {
+  display: grid;
+  grid-gap: 10px;
+}
+input,
+button {
+  height: 30px;
+}
+#version {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
