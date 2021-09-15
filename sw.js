@@ -7,5 +7,5 @@ self.addEventListener('install', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  event.respondWith(caches.match(event.request));
+  event.respondWith(async () => await caches.match(event.request));
 });
